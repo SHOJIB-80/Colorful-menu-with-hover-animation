@@ -1,0 +1,39 @@
+main{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+@keyframes color {
+    from{
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: -1000px 0px;
+    }
+}
+.link{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 20px;
+}
+.link:hover{
+    animation: color 4s infinite linear;
+}
+.link span{
+    background: black;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
